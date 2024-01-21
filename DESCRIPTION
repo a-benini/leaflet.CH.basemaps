@@ -38,3 +38,5 @@ Suggests:
     units,
     usethis
 Config/testthat/edition: 3
+URL: https://github.com/a-benini/leaflet.CH.basemaps
+BugReports: https://github.com/a-benini/leaflet.CH.basemaps/issues
