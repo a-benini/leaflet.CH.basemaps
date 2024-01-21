@@ -1,0 +1,28 @@
+#' Lakes
+#'
+#' @description
+#' Lakes overlapping with the Swiss territory.
+#'
+#'
+#' @format \code{sf feature collection POLYGON}:
+#' \describe{
+#'   \item{name}{name of lake, if the name is provided in multiple languages, these are separated by a bar \code{|}}
+#'   \item{geometry}{geometry column}
+#' }
+#'
+#' @details The geometries originate from the 3D-\code{POLYGON}s included in layer
+#' \code{tlm_bb_bodenbedeckung} with attribute \code{objektart} equal to
+#' \code{Stehende Gewaesser} and minimal area of 2.5 km^2. From this selection
+#' some dammed but narrow lakes (Grimselsee, Lac de la Gruyère, Lac d'Emosson,
+#' Lac des Dix, Lago di Lei, Lago di Livigno, Schiffenensee, Wohlensee) were
+#' excluded. The lakes' \code{name}s derive from the overlapping
+#' 3D-\code{LINESTRING} layer \code{tlm_gewaesser_stehendes_gewaesser}. Z-dimension
+#' was dropped.
+#'
+#' Both \code{tlm_bb_bodenbedeckung} and \code{tlm_gewaesser_stehendes_gewaesser}
+#' are part of \code{swissTLM3D} (s. Source).
+#'
+#' @source swisstlm3d_2023-03_2056_5728.gpkg.zip was downloaded on
+#' 17/12/2023 from
+#' \url{https://www.swisstopo.admin.ch/en/geodata/landscape/tlm3d.html}
+"lakes"

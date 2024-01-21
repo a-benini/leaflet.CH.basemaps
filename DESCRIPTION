@@ -1,0 +1,40 @@
+Package: leaflet.CH.basemaps
+Title: Add Swiss Base Maps to Interactive Web Maps
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Attilio",
+           family = "Benini",
+           role = c("aut", "cre"),
+           email = "attilio.benini@gmx.net")
+Description: 'leaflet.CH.basemaps' includes functions for adding some Swiss base 
+    maps, most of which are not accessible via leaflet-providers, to interactive
+    web maps. The core function allows adding a selection of base maps to an object 
+    of the class 'leaflet', 'mapview' or 'tmap'. Furthermore, for each of selectable
+    base maps there is a specific function, enabling adding it to an existing map.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.0
+Imports: 
+    htmlwidgets,
+    leaflet (>= 2.2.1),
+    leaflet.extras (>= 1.0.0),
+    tibble,
+    tmap (>= 3.3.4),
+    withr
+Depends: 
+    R (>= 3.6.0)
+LazyData: true
+Suggests: 
+    dplyr,
+    leafem (>= 0.2.3),
+    leaflet.providers (>= 2.0.0),
+    leafpop (>= 0.1.0),
+    leafsync (>= 0.1.0),
+    mapview (>= 2.11.2),
+    sf,
+    stringr,
+    testthat (>= 3.0.0),
+    units,
+    usethis
+Config/testthat/edition: 3
