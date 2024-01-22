@@ -31,7 +31,6 @@ an existing map.
 # (to run examples without surprises):
 remotes::install_github(
   "a-benini/leaflet.CH.basemaps",
-  build_vignettes = TRUE,
   dependencies = c("Imports", "Suggests")
   )
 ```
