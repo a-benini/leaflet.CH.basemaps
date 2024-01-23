@@ -14,9 +14,9 @@ interactive web maps. Most of these base maps are not accessible via
 selection of base maps to an object of the class
 [`leaflet`](https://rstudio.github.io/leaflet/),
 [`mapview`](https://r-spatial.github.io/mapview/) or
-[`tmap`](https://r-tmap.github.io/tmap/). Furthermore, for each of
-selectable base maps there is a specific function, enabling adding it to
-an existing map.
+[`tmap`](https://r-tmap.github.io/tmap/). Furthermore, for each
+selectable base map there is a specific function, to add it to an
+existing map.
 
 ## Installation
 

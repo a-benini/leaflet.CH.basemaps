@@ -9,8 +9,8 @@ Authors@R:
 Description: 'leaflet.CH.basemaps' includes functions for adding some Swiss base 
     maps, most of which are not accessible via leaflet-providers, to interactive
     web maps. The core function allows adding a selection of base maps to an object 
-    of the class 'leaflet', 'mapview' or 'tmap'. Furthermore, for each of selectable
-    base maps there is a specific function, enabling adding it to an existing map.
+    of the class 'leaflet', 'mapview' or 'tmap'. Furthermore, for each selectable
+    base map there is a specific function, to add it to an existing map.
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
