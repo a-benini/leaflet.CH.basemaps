@@ -21,7 +21,7 @@
 #' selected base map in a language. Available choices are \code{"EN"} (English
 #' / default), \code{"DE"} (German), \code{"FR"} (French), \code{"IT"} (Italian)
 #' or \code{"RM"} (Rhaeto-Romance). \code{language} is only effective if
-#' \code{group} is left unspecified.
+#' \code{baseGroupNames} is left unspecified.
 #' @param bg_col background color. default \code{white}
 #' @param collapsed_layer_control if \code{TRUE}, the layers control will be
 #' rendered as an icon that expands when hovered over. Set to \code{FALSE}

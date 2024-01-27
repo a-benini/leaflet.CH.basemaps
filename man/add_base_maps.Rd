@@ -47,7 +47,7 @@ as \code{baseGroups} giving each base map a user defined group name.}
 selected base map in a language. Available choices are \code{"EN"} (English
 / default), \code{"DE"} (German), \code{"FR"} (French), \code{"IT"} (Italian)
 or \code{"RM"} (Rhaeto-Romance). \code{language} is only effective if
-\code{group} is left unspecified.}
+\code{baseGroupNames} is left unspecified.}
 
 \item{bg_col}{background color. default \code{white}}
 
