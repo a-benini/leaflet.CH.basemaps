@@ -80,6 +80,5 @@ tm %>%
 <img src="man/figures/README-example-2.png" width="800px"/>
 
 Note that by default predefined group names of base maps are in English.
-Switching to predefined in layer/group names in German, French, Italian
-or Rhaeto-Romance is possible by `add_base_maps()`’s argument
-`language`.
+Switching to predefined layer/group names in German, French, Italian or
+Rhaeto-Romance is possible by `add_base_maps()`’s argument `language`.
