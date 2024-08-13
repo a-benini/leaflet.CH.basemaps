@@ -29,10 +29,7 @@ existing map.
 
 # recommended: installation from GitHub including suggested packages
 # (to run examples without surprises):
-remotes::install_github(
-  "a-benini/leaflet.CH.basemaps",
-  dependencies = c("Imports", "Suggests")
-  )
+remotes::install_github("a-benini/leaflet.CH.basemaps", dependencies = TRUE)
 ```
 
 ## Example
