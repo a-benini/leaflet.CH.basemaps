@@ -1,6 +1,6 @@
 Package: leaflet.CH.basemaps
 Title: Add Swiss Base Maps to Interactive Web Maps
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     person(given = "Attilio",
            family = "Benini",
