@@ -36,7 +36,8 @@ Suggests:
     stringr,
     testthat (>= 3.0.0),
     units,
-    usethis
+    usethis,
+    webshot
 Config/testthat/edition: 3
 URL: https://github.com/a-benini/leaflet.CH.basemaps
 BugReports: https://github.com/a-benini/leaflet.CH.basemaps/issues
