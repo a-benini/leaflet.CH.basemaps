@@ -1,8 +1,8 @@
 #' Save a map to an HTML file
 #'
 #' @param map object of class \code{leaflet}, \code{mapview} or \code{tmap} to save
-#' @param file File to save HTML into
-#' @param overwrite Overwrite existing \code{file}? (default \code{TRUE})
+#' @param file file to save HTML into
+#' @param overwrite overwrite existing \code{file}? (default \code{TRUE})
 #'
 #' @description Save an object of class \code{leaflet}, \code{mapview} or
 #' \code{tmap} to a self-contained HTML file (e.g. for sharing with others).

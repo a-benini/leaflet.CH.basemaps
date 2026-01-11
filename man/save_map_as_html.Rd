@@ -9,9 +9,9 @@ save_map_as_html(map, file, overwrite = TRUE)
 \arguments{
 \item{map}{object of class \code{leaflet}, \code{mapview} or \code{tmap} to save}
 
-\item{file}{File to save HTML into}
+\item{file}{file to save HTML into}
 
-\item{overwrite}{Overwrite existing \code{file}? (default \code{TRUE})}
+\item{overwrite}{overwrite existing \code{file}? (default \code{TRUE})}
 }
 \description{
 Save an object of class \code{leaflet}, \code{mapview} or
