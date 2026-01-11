@@ -4,6 +4,7 @@
 # leaflet.CH.basemaps: Add Swiss Base Maps to Interactive Web Maps
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 `leaflet.CH.basemaps` includes functions in R for adding 16 different
@@ -68,7 +69,7 @@ some_where <- c(2710200, 1113350) %>% st_point() %>% st_sfc(crs = 2056)
 tm <- 
   some_where %>% 
   tm_shape(., bbox = st_buffer(., units::set_units(1.5, "km"))) +
-  tm_dots(col = "red", size = 0.5, group = "some where")
+  tm_dots(fill = "red", size = 2, group = "some where")
 
 tm %>%
   add_base_maps(
