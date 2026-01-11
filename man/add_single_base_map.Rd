@@ -203,11 +203,12 @@ m \%>\%
 # a tmap obj. with its base maps
 gl <- subset(cantons, name == "Glarus")
 tm <-
-  tm_shape(gl) + tm_borders(group = "Kt. Glarus", lwd = 2, col = "red") +
+  tm_shape(gl) +
+  tm_borders(group = "Kt. Glarus", lwd = 2, col = "red", fill_alpha = 0) +
   tm_shape(waldperlen[,c("bezeichnung", "thema")]) +
-  tm_bubbles(col = "red", group = "Waldperlen", size = 0.5) +
+  tm_bubbles(fill = "red", group = "Waldperlen", size = 0.5) +
   tm_basemap(c("OpenStreetMap", "CyclOSM"))
-# tmap_leaflet(tm) # view interactive version of tmap
+# (tmap_leaflet(tm)) # view interactive version of tmap
 # use tmap obj. & inherit its base maps + add base maps form leaflet.CH.basemaps
 tm \%>\%
   add_relief(language = "DE") \%>\%

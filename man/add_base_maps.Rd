@@ -161,13 +161,13 @@ gl <- subset(cantons, name == "Glarus")
 bb <- st_bbox(gl) + c(0, -7, 3, 0) * 1000
 tm <-
   tm_shape(lakes[gl, ], bbox = bb) +
-  tm_polygons(col = "cyan", group = "Glarner Seen") +
+  tm_fill(fill = "cyan", group = "Glarner Seen") +
   tm_shape(gl) +
-  tm_borders(group = "Kt. Glarus", lwd = 2, col = "red") +
+  tm_borders(group = "Kt. Glarus", lwd = 2, col = "red", fill_alpha = 0) +
   tm_shape(waldperlen[, c("bezeichnung", "thema")]) +
-  tm_bubbles(col = "red", group = "Waldperlen", size = 0.5) +
+  tm_bubbles(fill = "red", group = "Waldperlen", size = 0.5) +
   tm_basemap("Stadia.StamenWatercolor", group = "wasserfarben")
-# tmap_leaflet(tm) # view interactive version of tmap
+# (tmap_leaflet(tm)) # view interactive version of tmap
 
 # use add_base_maps() on a tmap obj. & drop by default its base maps
 tm \%>\%
