@@ -1,3 +1,6 @@
+# leaflet.CH.basemaps 0.0.0.9001
+* minor updates
+
 # leaflet.CH.basemaps 0.0.0.9000
 * 1st release on GitHub
 * 23 functions: <br/>
