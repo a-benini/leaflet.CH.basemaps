@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/a-benini/leaflet.CH.basemaps/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/a-benini/leaflet.CH.basemaps/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `leaflet.CH.basemaps` includes functions in R for adding 16 different
