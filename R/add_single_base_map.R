@@ -50,13 +50,13 @@
 #'
 #' # check what they look like:
 #' all_base_maps <- base_maps()$base_map
-#' mapview(lakes[10,], layer.name = "some lake", legend = FALSE) %>%
-#'   add_base_maps(baseGroups = all_base_maps) %>%
+#' mapview(lakes[10,], layer.name = "some lake", legend = FALSE) |>
+#'   add_base_maps(baseGroups = all_base_maps) |>
 #'   setView(8, 46.75, 13)
 #'
 #' # link / popup as new attributes
 #' waldperlen <-
-#'   waldperlen %>%
+#'   waldperlen |>
 #'   mutate(
 #'     link = paste0("<b><a href='", flyer,"'>", bezeichnung, "</a></b>"),
 #'     popup = paste(link, thema, sep = "<br/>")
@@ -64,18 +64,18 @@
 #'
 #' # a leaflet obj.
 #' waldperlen_markers <-
-#'   leaflet() %>%
+#'   leaflet() |>
 #'   addMarkers(data = st_transform(waldperlen, 4326), popup = ~popup, group = "waldperlen")
 #'
 #' # add a base map form leaflet.CH.basemaps (no layers control)
-#' waldperlen_markers %>% add_relief()
+#' waldperlen_markers |> add_relief()
 #'
 #' # add multiple base maps from leaflet.CH.basemaps & other sources with
 #' # user defined group names & sequence of base layers in control panel
-#' waldperlen_markers %>%
-#'   add_relief(group = "light relief") %>% #'
-#'   add_swissimage(group = "current swissimage") %>%
-#'   addProviderTiles("Stadia.StamenWatercolor", group = "watercolor") %>%
+#' waldperlen_markers |>
+#'   add_relief(group = "light relief") |> #'
+#'   add_swissimage(group = "current swissimage") |>
+#'   addProviderTiles("Stadia.StamenWatercolor", group = "watercolor") |>
 #'   addLayersControl(
 #'     overlayGroups = "waldperlen",
 #'     baseGroups    = c("watercolor", "light relief", "current swissimage"),
@@ -88,10 +88,10 @@
 #'
 #' # add multiple base maps from leaflet.CH.basemaps having german defalut group
 #' # names + provider tiles
-#' waldperlen_markers %>%
-#'   add_swissTLM_color(language = "DE") %>%
-#'   add_swisstopo_grey(language = "DE") %>%
-#'   addProviderTiles("OpenTopoMap", group = "OpenTopoMap") %>%
+#' waldperlen_markers |>
+#'   add_swissTLM_color(language = "DE") |>
+#'   add_swisstopo_grey(language = "DE") |>
+#'   addProviderTiles("OpenTopoMap", group = "OpenTopoMap") |>
 #'   # group requiered --> else addLayersControl() wont work correctly
 #'   addLayersControl(
 #'     overlayGroups = "waldperlen",
@@ -118,14 +118,14 @@
 #'   )
 #' # m # view mapview
 #' # use mapview obj. & inherit its base maps + add base maps form leaflet.CH.basemaps
-#' m %>%
-#'   add_relief() %>%  # group names determined by default language (EN)
-#'   add_no_base_map() %>%
+#' m |>
+#'   add_relief() |>  # group names determined by default language (EN)
+#'   add_no_base_map() |>
 #'   addLayersControl(
 #'     overlayGroups = c("cantons", "lakes"),
 #'     baseGroups    = rev(c( "Stadia.StamenTonerLite", "relief", "OpenStreetMap", "no base map")),
 #'     options       = leaflet::layersControlOptions(collapsed = FALSE)
-#'   ) %>%
+#'   ) |>
 #'   leaflet.extras::setMapWidgetStyle(list(background = "black"))
 #'
 #' # a tmap obj. with its base maps
@@ -138,9 +138,9 @@
 #'   tm_basemap(c("OpenStreetMap", "CyclOSM"))
 #' # (tmap_leaflet(tm)) # view interactive version of tmap
 #' # use tmap obj. & inherit its base maps + add base maps form leaflet.CH.basemaps
-#' tm %>%
-#'   add_relief(language = "DE") %>%
-#'   add_swissimage(group = "SWISSIMAGE") %>%
+#' tm |>
+#'   add_relief(language = "DE") |>
+#'   add_swissimage(group = "SWISSIMAGE") |>
 #'   leaflet::addLayersControl(
 #'     baseGroups    = c("Relief", "CyclOSM", "SWISSIMAGE", "OpenStreetMap"),
 #'     overlayGroups = c("Waldperlen", "Kt. Glarus"),

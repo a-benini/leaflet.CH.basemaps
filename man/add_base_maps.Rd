@@ -94,7 +94,7 @@ library(leaflet)
 
 # link / popup as new attributes
 waldperlen <-
-  waldperlen \%>\%
+  waldperlen |>
   mutate(
     link = paste0("<b><a href='", flyer, "'>", bezeichnung, "</a></b>"),
     popup = paste(link, thema, sep = "<br/>")
@@ -102,16 +102,16 @@ waldperlen <-
 
 # a leaflet obj.
 waldperlen_markers <-
-  leaflet() \%>\%
+  leaflet() |>
   addMarkers(data = st_transform(waldperlen, 4326), popup = ~popup, group = "waldperlen")
 
 # applying add_base_maps() to a map obj. having no layers control ...
-try(waldperlen_markers \%>\% add_base_maps())
+try(waldperlen_markers |> add_base_maps())
 # ... requires adjusting the default setting
-waldperlen_markers \%>\% add_base_maps(overlayGroups = "waldperlen")
+waldperlen_markers |> add_base_maps(overlayGroups = "waldperlen")
 
 # alter more of the default settings
-waldperlen_markers \%>\%
+waldperlen_markers |>
   add_base_maps(
     overlayGroups = "waldperlen",
     baseGroups    = c("swissTLM_color", "relief", "swissimage", "swisstopo_color"),
@@ -121,7 +121,7 @@ waldperlen_markers \%>\%
     )
 
 # user defined names for base maps
-waldperlen_markers \%>\%
+waldperlen_markers |>
   add_base_maps(
     overlayGroups  = "waldperlen",
     baseGroups     = c("siegfried_map", "swisstopo_color", "swissimage_1946"),
@@ -148,7 +148,7 @@ m <-
 # m # view mapview
 
 # use add_base_maps() on a mapview obj. & keeping its base maps
-m \%>\%
+m |>
   add_base_maps(
     baseGroups      = c("relief", "no_base_map", "swissTLM_color"),
     # showGroup       = "cantons", # undo inherited layers hiding
@@ -170,7 +170,7 @@ tm <-
 # (tmap_leaflet(tm)) # view interactive version of tmap
 
 # use add_base_maps() on a tmap obj. & drop by default its base maps
-tm \%>\%
+tm |>
   add_base_maps(
     baseGroups = c("relief", "swisstopo_grey", "swissimage", "hillshade", "swissTLM_color"),
     language   = "DE",
