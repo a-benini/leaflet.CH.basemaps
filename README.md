@@ -46,8 +46,8 @@ library(leaflet.CH.basemaps)
 # a mapview obj.
 m <- mapview(lakes[10,], layer.name = "some lake", legend = FALSE) 
 
-m %>%
-  add_base_maps() %>%   # returns leaflet obj. 
+m |>
+  add_base_maps() |> # returns leaflet obj. 
   setView(8, 46.75, 13) # further manipulation of leaflet obj. possible
 ```
 
@@ -65,14 +65,14 @@ library(sf)
 library(tmap)
 
 # a point ...
-some_where <- c(2710200, 1113350) %>% st_point() %>% st_sfc(crs = 2056)
+some_where <- c(2710200, 1113350) |> st_point() |> st_sfc(crs = 2056)
 # a tmap obj.
 tm <- 
-  some_where %>% 
-  tm_shape(., bbox = st_buffer(., units::set_units(1.5, "km"))) +
+  some_where |> 
+  tm_shape(bbox = st_buffer(some_where, units::set_units(1.5, "km"))) +
   tm_dots(fill = "red", size = 2, group = "some where")
 
-tm %>%
+tm |>
   add_base_maps(
     baseGroups = c("siegfried_map", "swissimage_1946"),
     baseGroupNames = c('Siegfried Map 1st edition (1870 - 1926)', '"US flight mission" (1946)')
