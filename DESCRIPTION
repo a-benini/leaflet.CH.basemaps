@@ -14,7 +14,6 @@ Description: 'leaflet.CH.basemaps' includes functions for adding some Swiss base
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 Imports: 
     htmlwidgets,
     leaflet (>= 2.2.1),
@@ -41,3 +40,4 @@ Suggests:
 Config/testthat/edition: 3
 URL: https://github.com/a-benini/leaflet.CH.basemaps
 BugReports: https://github.com/a-benini/leaflet.CH.basemaps/issues
+Config/roxygen2/version: 8.0.0
