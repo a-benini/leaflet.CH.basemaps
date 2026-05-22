@@ -145,7 +145,7 @@ waldperlen_markers |> add_relief()
 # add multiple base maps from leaflet.CH.basemaps & other sources with
 # user defined group names & sequence of base layers in control panel
 waldperlen_markers |>
-  add_relief(group = "light relief") |> #'
+  add_relief(group = "light relief") |>
   add_swissimage(group = "current swissimage") |>
   addProviderTiles("Stadia.StamenWatercolor", group = "watercolor") |>
   addLayersControl(
