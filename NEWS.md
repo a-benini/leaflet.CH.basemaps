@@ -1,3 +1,6 @@
+# leaflet.CH.basemaps 0.0.0.9002
+* replace magrittr pipe `%>%` with base pipe `|>` in README and on help pages, and hence require R >= 4.1.0
+
 # leaflet.CH.basemaps 0.0.0.9001
 * minor updates
 
